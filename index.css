@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Fullpage{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-color: rgb(38, 222, 213);
+}
+
+.Hpage{
+    background-color: rgb(217, 232, 227);
+    box-shadow: 0 0 4px 1px green;
+    width: 50vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    border-radius: 8px;
+}
+
+.Flogin{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.loginInp{
+
+    width: 15vw;
+    height: 2.8vh;
+    padding: 3px;
+    outline: none;
+    border: 2px solid rgb(73, 192, 115);
+    border-radius: 6px;
+}
+
+.loginBtn{
+
+    margin-top: 3vh;
+    padding: 8px 25px;
+    border: none;
+    background-color: rgb(31, 175, 113);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 6px;
+    
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Fullpage {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .Hpage {
+        width: 100%;
+        max-width: 400px;
+        padding: 5vw;
+    }
+
+    .loginInp {
+        width: 100%;
+        max-width: 250px;
+    }
+}
